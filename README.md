@@ -1,3 +1,3 @@
 # ACME-C#
 
-This project is intended to bring about simplest implementation for ACMEv2 client.
+This project is intended for being one of the simplest implementations for ACMEv2 client.
