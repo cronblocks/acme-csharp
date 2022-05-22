@@ -1,4 +1,4 @@
-﻿namespace ACMEv2ConsoleApp;
+﻿namespace CronBlocks.ACMEv2ConsoleApp;
 
 internal class Program
 {
