@@ -5,5 +5,10 @@ internal class Program
     static void Main(string[] args)
     {
         Console.WriteLine("ACMEv2 Console App");
+        Console.WriteLine("------------------");
+
+        Console.WriteLine();
+        Console.Write("Press any key to exit... ");
+        Console.ReadKey();
     }
 }
