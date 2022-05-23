@@ -6,7 +6,7 @@ namespace CronBlocks.ACMEv2WebApp
     {
         public static void Main(string[] args)
         {
-            WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
+            WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
             //
             // Add services to the container
@@ -14,7 +14,7 @@ namespace CronBlocks.ACMEv2WebApp
             builder.Services.AddRazorPages();
             builder.Services.AddACMEv2(); //---> ACMEv2
 
-            WebApplication? app = builder.Build();
+            WebApplication app = builder.Build();
 
             //
             // Configure the HTTP request pipeline
