@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace ACMEv2WebApp.Pages
+namespace CronBlocks.ACMEv2WebApp.Pages
 {
     public class PrivacyModel : PageModel
     {

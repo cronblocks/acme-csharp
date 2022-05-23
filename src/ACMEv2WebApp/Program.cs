@@ -1,4 +1,4 @@
-namespace ACMEv2WebApp
+namespace CronBlocks.ACMEv2WebApp
 {
     public class Program
     {
