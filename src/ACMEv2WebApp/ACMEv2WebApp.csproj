@@ -7,4 +7,8 @@
     <RootNamespace>CronBlocks.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ACMEv2\ACMEv2.csproj" />
+  </ItemGroup>
+
 </Project>
