@@ -12,7 +12,7 @@ namespace CronBlocks.ACMEv2WebApp
             // Add services to the container
             //
             builder.Services.AddRazorPages();
-            builder.Services.AddACMEv2();
+            builder.Services.AddACMEv2(); //---> ACMEv2
 
             WebApplication? app = builder.Build();
 
@@ -30,7 +30,7 @@ namespace CronBlocks.ACMEv2WebApp
 
             app.UseRouting();
 
-            app.UseACMEv2();
+            app.UseACMEv2(); //---> ACMEv2
 
             app.UseAuthorization();
 
