@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CronBlocks.ACMEv2.Entities
+﻿namespace CronBlocks.ACMEv2.Entities
 {
     public class Problem
     {
@@ -16,7 +12,7 @@ namespace CronBlocks.ACMEv2.Entities
     {
         Unknown = 0,
 
-        AccountDoesNotExist,
+        AccountDoesnotExist,
         AlreadyRevoked,
         BadCSR,
         BadNonce,

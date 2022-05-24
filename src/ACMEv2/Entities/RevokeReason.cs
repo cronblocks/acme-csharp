@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CronBlocks.ACMEv2.Entities
+﻿namespace CronBlocks.ACMEv2.Entities
 {
     public enum RevokeReason
     {
@@ -13,7 +9,7 @@ namespace CronBlocks.ACMEv2.Entities
         Superseded,
         CessationOfOperation,
         CertificateHold,
-        
+
         _UNUSED_REASON_,
 
         RemoveFromCrl,
