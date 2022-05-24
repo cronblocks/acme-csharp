@@ -8,6 +8,6 @@ namespace CronBlocks.ACMEv2.Entities
     {
         public string DetailsUrl { get; set; }
         public string FetchError { get; set; }
-        public AuthorizationDetails Details { get; set; }
+        public AuthorizationDetails AuthorizationDetails { get; set; }
     }
 }
