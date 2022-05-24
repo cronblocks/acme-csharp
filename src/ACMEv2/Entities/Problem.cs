@@ -33,6 +33,6 @@
         Unauthorized,
         UnsupportedContact,
         UnsupportedIdentifier,
-        UserActionRequired,
+        UserActionRequired
     }
 }
