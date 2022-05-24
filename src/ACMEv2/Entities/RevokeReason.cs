@@ -14,7 +14,7 @@ namespace CronBlocks.ACMEv2.Entities
         CessationOfOperation,
         CertificateHold,
         
-        _UNUSED,
+        _UNUSED_REASON_,
 
         RemoveFromCrl,
         PrivilegeWithdrawn,
