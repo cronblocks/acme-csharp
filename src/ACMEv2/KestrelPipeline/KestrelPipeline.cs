@@ -13,7 +13,7 @@ namespace CronBlocks.ACMEv2.KestrelPipeline
 
         }
 
-        public static void UseACMEv2(this IApplicationBuilder builder)
+        public static void UseACMEv2(this IApplicationBuilder appBuilder)
         {
 
         }
