@@ -11,6 +11,14 @@ namespace CronBlocks.ACMEv2.ExternalServices.CommandLine
         public AcmeService(AcmeSettings acmeSettings = null)
         {
             AcmeSettings = acmeSettings;
+
+            if (AcmeSettings == null)
+            {
+                AcmeSettings = new AcmeSettings()
+                {
+                    // Default settings' overrides here
+                };
+            }
         }
     }
 }
