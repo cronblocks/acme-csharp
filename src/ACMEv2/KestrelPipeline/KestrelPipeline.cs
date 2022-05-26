@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CronBlocks.ACMEv2.WebInterface
+namespace CronBlocks.ACMEv2.KestrelPipeline
 {
-    public static class Pipeline
+    public static class KestrelPipeline
     {
         public static void AddACMEv2(this IServiceCollection services)
         {
