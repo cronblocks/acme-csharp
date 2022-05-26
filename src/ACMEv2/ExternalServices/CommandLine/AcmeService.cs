@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CronBlocks.ACMEv2.ExternalServices
+namespace CronBlocks.ACMEv2.ExternalServices.CommandLine
 {
-    public class AcmeSettings
+    public class AcmeService
     {
     }
 }
