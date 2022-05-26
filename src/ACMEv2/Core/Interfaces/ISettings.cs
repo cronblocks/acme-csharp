@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CronBlocks.ACMEv2.Interfaces
+namespace CronBlocks.ACMEv2.Core.Interfaces
 {
     internal interface ISettings
     {

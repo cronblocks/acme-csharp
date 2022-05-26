@@ -1,4 +1,4 @@
-﻿using CronBlocks.ACMEv2.Interfaces;
+﻿using CronBlocks.ACMEv2.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
