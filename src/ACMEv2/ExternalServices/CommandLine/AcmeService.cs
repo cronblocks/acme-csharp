@@ -21,7 +21,9 @@ namespace CronBlocks.ACMEv2.ExternalServices.CommandLine
             }
         }
 
-        public void GetCertificate()
+        public void GetCertificate(
+            Action<string> failureCallback = null,
+            Action<string> successCallback = null)
         {
             throw new NotImplementedException();
         }
