@@ -14,10 +14,20 @@ internal class Program
             // Settings will go here
         });
 
-        acmeService.GetCertificate();
+        acmeService.GetCertificate(OnAcmeFailed, OnAcmeSucceeded);
 
         Console.WriteLine();
         Console.Write("Press any key to exit... ");
         Console.ReadKey();
+    }
+
+    private static void OnAcmeSucceeded(string message, string certificateFilename)
+    {
+        throw new NotImplementedException();
+    }
+
+    private static void OnAcmeFailed(string message)
+    {
+        throw new NotImplementedException();
     }
 }
