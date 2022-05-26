@@ -20,5 +20,10 @@ namespace CronBlocks.ACMEv2.ExternalServices.CommandLine
                 };
             }
         }
+
+        public void GetCertificate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -14,6 +14,8 @@ internal class Program
             // Settings will go here
         });
 
+        acmeService.GetCertificate();
+
         Console.WriteLine();
         Console.Write("Press any key to exit... ");
         Console.ReadKey();
