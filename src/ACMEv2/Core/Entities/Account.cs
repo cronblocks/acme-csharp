@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CronBlocks.ACMEv2.Entities
+namespace CronBlocks.ACMEv2.Core.Entities
 {
     public class Account
     {
