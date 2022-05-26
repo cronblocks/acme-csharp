@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CronBlocks.ACMEv2.Services
+namespace CronBlocks.ACMEv2.ExternalServices
 {
     public static class KestrelPipeline
     {
