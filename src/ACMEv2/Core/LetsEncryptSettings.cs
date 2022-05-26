@@ -1,4 +1,4 @@
-﻿namespace CronBlocks.ACMEv2.Settings
+﻿namespace CronBlocks.ACMEv2.Core
 {
     internal class LetsEncryptSettings
     {
