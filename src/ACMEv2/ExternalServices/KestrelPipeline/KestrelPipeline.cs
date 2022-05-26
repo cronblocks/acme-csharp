@@ -8,9 +8,19 @@ namespace CronBlocks.ACMEv2.ExternalServices.KestrelPipeline
 {
     public static class KestrelPipeline
     {
-        public static void AddACMEv2(this IServiceCollection services)
-        {
+        private static AcmeSettings _settings;
 
+        public static void AddACMEv2(this IServiceCollection services, AcmeSettings acmeSettings = null)
+        {
+            if (services is null)
+            {
+                throw new ArgumentNullException(nameof(services));
+            }
+
+            _settings = acmeSettings ?? new AcmeSettings()
+            {
+                // Defaults' override here
+            };
         }
 
         public static void UseACMEv2(this IApplicationBuilder appBuilder)
