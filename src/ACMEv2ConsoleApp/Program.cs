@@ -1,4 +1,4 @@
-﻿using CronBlocks.ACMEv2.ExternalServices.CommandLine;
+﻿using CronBlocks.ACMEv2.Interface.CommandLine;
 
 namespace CronBlocks.ACMEv2ConsoleApp;
 
