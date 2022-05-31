@@ -18,7 +18,7 @@ namespace CronBlocks.ACMEv2.Core
             if (_settings.Logging == null)
             {
                 _settings.Logging =
-                    new AcmeDefaultConsoleLogging(logInfo: true, logWarning: true, logError: true);
+                    new ConsoleLogging(logInfo: true, logWarning: true, logError: true);
             }
 
             _log = _settings.Logging;

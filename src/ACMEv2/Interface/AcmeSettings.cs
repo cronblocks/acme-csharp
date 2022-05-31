@@ -25,10 +25,10 @@ namespace CronBlocks.ACMEv2.Interface
     public class AcmeSettings
     {
         /// <summary>
-        /// Logging ACME messages - default = AcmeDefaultConsoleLogging
+        /// Logging ACME messages - default = ConsoleLogging
         /// </summary>
         public IAcmeLogging Logging { get; set; } =
-            new AcmeDefaultConsoleLogging(logInfo: true, logWarning: true, logError: true);
+            new ConsoleLogging(logInfo: true, logWarning: true, logError: true);
 
         /// <summary>
         /// Location for keeping local ACME data - default = {current-directory}/.acme-data

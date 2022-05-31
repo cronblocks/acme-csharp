@@ -2,13 +2,13 @@
 
 namespace CronBlocks.ACMEv2.Core.DefaultInterfacesImpl
 {
-    internal class AcmeDefaultConsoleLogging : IAcmeLogging
+    internal class ConsoleLogging : IAcmeLogging
     {
         private readonly bool logInfo;
         private readonly bool logWarning;
         private readonly bool logError;
 
-        public AcmeDefaultConsoleLogging(bool logInfo = false, bool logWarning = true, bool logError = true)
+        public ConsoleLogging(bool logInfo = false, bool logWarning = true, bool logError = true)
         {
             this.logInfo = logInfo;
             this.logWarning = logWarning;
