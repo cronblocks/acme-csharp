@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CronBlocks.ACMEv2.Core;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,11 +8,14 @@ namespace CronBlocks.ACMEv2.Interface.CommandLine
     public class AcmeService
     {
         private AcmeSettings _settings;
+        private static AcmeProtocol _protocol;
 
         public AcmeService(AcmeSettings acmeSettings = null)
         {
             _settings = acmeSettings ?? new AcmeSettings();
             _settings.ServerType = ServerType.TempServer;
+
+            _protocol = new AcmeProtocol(_settings);
         }
 
         /// <summary>
