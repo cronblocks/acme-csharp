@@ -21,7 +21,7 @@ namespace CronBlocks.ACMEv2.Interface
         public AcmeProvider AcmeProvider { get; set; } = AcmeProvider.LetsEncrypt;
 
         /// <summary>
-        /// Whether or not to use staging server - default = true
+        /// Whether or not to use staging environment - default = true
         /// </summary>
         public bool UseStaging { get; set; } = true;
     }
