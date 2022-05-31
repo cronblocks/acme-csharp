@@ -15,6 +15,13 @@ namespace CronBlocks.ACMEv2.Interface
         DnsTxtRecord
     }
 
+    public enum ServerType
+    {
+        None,
+        TempServer,
+        Kestrel
+    }
+
     public class AcmeSettings
     {
         /// <summary>
@@ -42,5 +49,10 @@ namespace CronBlocks.ACMEv2.Interface
         /// Domain control validation method - default = HTTP Request Validation
         /// </summary>
         public ValidationMethod ValidationMethod { get; set; } = ValidationMethod.HttpQuery;
+
+        /// <summary>
+        /// Server type - default = None
+        /// </summary>
+        public ServerType ServerType { get; set; } = ServerType.None;
     }
 }
