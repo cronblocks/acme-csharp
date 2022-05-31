@@ -1,4 +1,6 @@
-﻿namespace CronBlocks.ACMEv2.Interface
+﻿using CronBlocks.ACMEv2.Interface;
+
+namespace CronBlocks.ACMEv2.Core.DefaultInterfacesImpl
 {
     internal class AcmeDefaultConsoleLogging : IAcmeLogging
     {
