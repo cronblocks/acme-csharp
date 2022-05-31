@@ -2,7 +2,7 @@
 {
     internal interface ISerializer
     {
-        string Serialize<T>(T obj);
-        T Deserialize<T>(string json);
+        string SerializeToJson<T>(T obj);
+        T DeserializeFromJson<T>(string json);
     }
 }

@@ -5,7 +5,7 @@ namespace CronBlocks.ACMEv2.Core.DefaultInterfacesImpl
 {
     internal class Serializer : ISerializer
     {
-        public string Serialize<T>(T obj)
+        public string SerializeToJson<T>(T obj)
         {
             if (obj == null)
             {
@@ -15,7 +15,7 @@ namespace CronBlocks.ACMEv2.Core.DefaultInterfacesImpl
             return JsonSerializer.Serialize(obj);
         }
 
-        public T Deserialize<T>(string json)
+        public T DeserializeFromJson<T>(string json)
         {
             if (string.IsNullOrEmpty(json))
             {
