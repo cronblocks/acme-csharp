@@ -10,7 +10,7 @@ internal class Program
         Console.WriteLine("ACMEv2");
         Console.WriteLine("------------------");
 
-        AcmeService acmeService = new AcmeService(new AcmeSettings()
+        CommandlineService acmeService = new CommandlineService(new AcmeSettings()
         {
             // Settings will go here
         });

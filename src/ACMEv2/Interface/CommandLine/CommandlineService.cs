@@ -5,12 +5,12 @@ using System.Text;
 
 namespace CronBlocks.ACMEv2.Interface.CommandLine
 {
-    public class AcmeService
+    public class CommandlineService
     {
         private AcmeSettings _settings;
         private static AcmeProtocol _protocol;
 
-        public AcmeService(AcmeSettings acmeSettings = null)
+        public CommandlineService(AcmeSettings acmeSettings = null)
         {
             _settings = acmeSettings ?? new AcmeSettings();
             _settings.ServerType = ServerType.TempServer;
