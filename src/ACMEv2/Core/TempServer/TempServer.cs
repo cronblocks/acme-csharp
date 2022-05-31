@@ -7,5 +7,9 @@ namespace CronBlocks.ACMEv2.Core.TempServer
 {
     internal class TempServer : IServer
     {
+        public void ServeDataAtEndPoint(string endPoint, string data)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
