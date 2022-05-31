@@ -24,7 +24,8 @@
         Dns,
         ExternalAccountRequired,
         IncorrectResponse,
-        InvalidContact,
+        InvalidContact = 13,
+        InvalidEmail = 13, // Let's encrypt difference: https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md
         Malformed,
         RateLimited,
         RejectedIdentifier,
