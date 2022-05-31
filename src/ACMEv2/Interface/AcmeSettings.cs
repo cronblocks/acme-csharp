@@ -18,7 +18,7 @@ namespace CronBlocks.ACMEv2.Interface
         public string LocalDataDir { get; set; } = $"{Path.Combine(Environment.CurrentDirectory, ".acme-data")}";
 
         /// <summary>
-        /// Provider - default is Let's Encrypt
+        /// Certificate provider - default is Let's Encrypt.
         /// </summary>
         public AcmeProvider AcmeProvider { get; set; } = AcmeProvider.LetsEncrypt;
 
