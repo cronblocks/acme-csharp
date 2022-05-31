@@ -19,7 +19,11 @@ namespace CronBlocks.ACMEv2.Core.DefaultInterfacesImpl
         {
             if (logInfo)
             {
-                System.Console.WriteLine($"ACME: {message}");
+                System.Console.ForegroundColor = System.ConsoleColor.Cyan;
+                System.Console.Write($"ACME - ");
+
+                System.Console.ResetColor();
+                System.Console.WriteLine($"{message}");
             }
         }
 
@@ -27,7 +31,11 @@ namespace CronBlocks.ACMEv2.Core.DefaultInterfacesImpl
         {
             if (logWarning)
             {
-                System.Console.WriteLine($"ACME Warning: {message}");
+                System.Console.ForegroundColor = System.ConsoleColor.Yellow;
+                System.Console.Write($"ACME Warning - ");
+                
+                System.Console.ResetColor();
+                System.Console.WriteLine($"{message}");
             }
         }
 
@@ -35,7 +43,11 @@ namespace CronBlocks.ACMEv2.Core.DefaultInterfacesImpl
         {
             if (logError)
             {
-                System.Console.WriteLine($"ACME ERROR: {message}");
+                System.Console.ForegroundColor = System.ConsoleColor.Red;
+                System.Console.Write($"ACME ERROR - ");
+
+                System.Console.ResetColor();
+                System.Console.WriteLine($"{message}");
             }
         }
     }
