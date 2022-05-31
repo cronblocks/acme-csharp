@@ -8,6 +8,12 @@ namespace CronBlocks.ACMEv2.Interface
         LetsEncrypt
     }
 
+    public enum ValidationMethod
+    {
+        HttpQuery,
+        DnsTxtRecord
+    }
+
     public class AcmeSettings
     {
         /// <summary>
@@ -24,5 +30,10 @@ namespace CronBlocks.ACMEv2.Interface
         /// Whether or not to use staging environment - default = true
         /// </summary>
         public bool UseStaging { get; set; } = true;
+
+        /// <summary>
+        /// Domain control validation method - default = HTTP Request Validation
+        /// </summary>
+        public ValidationMethod ValidationMethod { get; set; } = ValidationMethod.HttpQuery;
     }
 }
