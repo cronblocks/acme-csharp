@@ -6,19 +6,11 @@
         private readonly bool logWarning;
         private readonly bool logError;
 
-        public AcmeDefaultConsoleLogging(bool logInfo, bool logWarning, bool logError)
+        public AcmeDefaultConsoleLogging(bool logInfo = false, bool logWarning = true, bool logError = true)
         {
             this.logInfo = logInfo;
             this.logWarning = logWarning;
             this.logError = logError;
-        }
-
-        public void LogError(string message)
-        {
-            if (logError)
-            {
-                System.Console.WriteLine($"ACME ERROR: {message}");
-            }
         }
 
         public void LogInfo(string message)
@@ -34,6 +26,14 @@
             if (logWarning)
             {
                 System.Console.WriteLine($"ACME Warning: {message}");
+            }
+        }
+
+        public void LogError(string message)
+        {
+            if (logError)
+            {
+                System.Console.WriteLine($"ACME ERROR: {message}");
             }
         }
     }
