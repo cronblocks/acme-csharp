@@ -1,3 +1,4 @@
+using CronBlocks.ACMEv2.Interface;
 using CronBlocks.ACMEv2.Interface.KestrelPipeline;
 
 namespace CronBlocks.ACMEv2WebApp
@@ -12,7 +13,11 @@ namespace CronBlocks.ACMEv2WebApp
             // Add services to the container
             //
             builder.Services.AddRazorPages();
-            builder.Services.AddACMEv2(); //---> ACMEv2
+            builder.Services.AddACMEv2(  //---> ACMEv2
+                new AcmeSettings()
+                {
+                    // ACME Settings
+                });
 
             WebApplication app = builder.Build();
 
