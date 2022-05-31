@@ -6,19 +6,12 @@ namespace CronBlocks.ACMEv2.Interface.CommandLine
 {
     public class AcmeService
     {
-        public AcmeSettings AcmeSettings { get; }
+        private AcmeSettings _settings;
 
         public AcmeService(AcmeSettings acmeSettings = null)
         {
-            AcmeSettings = acmeSettings;
-
-            if (AcmeSettings == null)
-            {
-                AcmeSettings = new AcmeSettings()
-                {
-                    // Default settings' overrides here
-                };
-            }
+            _settings = acmeSettings ?? new AcmeSettings();
+            _settings.ServerType = ServerType.TempServer;
         }
 
         /// <summary>

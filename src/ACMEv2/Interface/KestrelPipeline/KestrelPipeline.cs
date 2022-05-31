@@ -17,10 +17,8 @@ namespace CronBlocks.ACMEv2.Interface.KestrelPipeline
                 throw new ArgumentNullException(nameof(services));
             }
 
-            _settings = acmeSettings ?? new AcmeSettings()
-            {
-                // Defaults' override here
-            };
+            _settings = acmeSettings ?? new AcmeSettings();
+            _settings.ServerType = ServerType.Kestrel;
         }
 
         public static void UseACMEv2(this IApplicationBuilder appBuilder)
