@@ -17,10 +17,13 @@ namespace CronBlocks.ACMEv2.Core
 
             if (_settings.Logging == null)
             {
-                _settings.Logging = new AcmeDefaultConsoleLogging(logInfo: true, logWarning: true, logError: true);
+                _settings.Logging =
+                    new AcmeDefaultConsoleLogging(logInfo: true, logWarning: true, logError: true);
             }
 
             _log = _settings.Logging;
+
+            _log.LogInfo($"Starting ACME Client: {DateTime.Now}");
         }
     }
 }
