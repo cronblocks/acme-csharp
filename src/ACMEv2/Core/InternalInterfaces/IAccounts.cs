@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CronBlocks.ACMEv2.Core.Interfaces
+namespace CronBlocks.ACMEv2.Core.InternalInterfaces
 {
-    internal class IDnsRecordHandler
+    internal interface IAccounts
     {
     }
 }

@@ -1,4 +1,4 @@
-﻿using CronBlocks.ACMEv2.Core.DefaultInterfacesImpl;
+﻿using CronBlocks.ACMEv2.Core.InternalInterfacesImpl;
 using System;
 using System.IO;
 

@@ -1,4 +1,4 @@
-﻿namespace CronBlocks.ACMEv2.Core.Interfaces
+﻿namespace CronBlocks.ACMEv2.Core.InternalInterfaces
 {
     internal interface ISerializer
     {
