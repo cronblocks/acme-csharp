@@ -27,8 +27,7 @@ namespace CronBlocks.ACMEv2.Interface
         /// <summary>
         /// Logging ACME messages - default = ConsoleLogging
         /// </summary>
-        public IAcmeLogging Logging { get; set; } =
-            new ConsoleLogging(logInfo: true, logWarning: true, logError: true);
+        public IAcmeLogging Logging { get; set; } = new ConsoleLogging(LoggingLevel.Info);
 
         /// <summary>
         /// Location for keeping local ACME data - default = {current-directory}/.acme-data
