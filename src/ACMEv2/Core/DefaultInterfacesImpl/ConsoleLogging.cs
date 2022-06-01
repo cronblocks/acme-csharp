@@ -4,15 +4,13 @@ namespace CronBlocks.ACMEv2.Core.DefaultInterfacesImpl
 {
     internal class ConsoleLogging : IAcmeLogging
     {
-        private readonly bool logInfo;
-        private readonly bool logWarning;
-        private readonly bool logError;
+        private bool logInfo = false;
+        private bool logWarning = false;
+        private bool logError = false;
 
-        public ConsoleLogging(bool logInfo = false, bool logWarning = true, bool logError = true)
+        public ConsoleLogging(LoggingLevel level = LoggingLevel.Info)
         {
-            this.logInfo = logInfo;
-            this.logWarning = logWarning;
-            this.logError = logError;
+            SetLoggingLevel(level);
         }
 
         public void LogInfo(string message)
@@ -48,6 +46,34 @@ namespace CronBlocks.ACMEv2.Core.DefaultInterfacesImpl
 
                 System.Console.ResetColor();
                 System.Console.WriteLine($"{message}");
+            }
+        }
+
+        public void SetLoggingLevel(LoggingLevel level)
+        {
+            logInfo = false;
+            logWarning = false;
+            logError = false;
+
+            switch (level)
+            {
+                case LoggingLevel.Info:
+                    logInfo = true;
+                    logWarning = true;
+                    logError = true;
+                    break;
+
+                case LoggingLevel.Warning:
+                    logInfo = false;
+                    logWarning = true;
+                    logError = true;
+                    break;
+
+                case LoggingLevel.Error:
+                    logInfo = false;
+                    logWarning = false;
+                    logError = true;
+                    break;
             }
         }
     }
