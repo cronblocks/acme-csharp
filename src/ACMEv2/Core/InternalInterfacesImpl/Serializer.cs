@@ -26,7 +26,7 @@ namespace CronBlocks.ACMEv2.Core.InternalInterfacesImpl
             return JsonSerializer.Deserialize<T>(json);
         }
 
-        public string SerializeToBase64(byte[] bytes, bool trimTrailingEquals = false)
+        public string SerializeToBase64(byte[] bytes, bool removeTrailingEquals = false)
         {
             if (bytes == null)
             {
@@ -35,7 +35,7 @@ namespace CronBlocks.ACMEv2.Core.InternalInterfacesImpl
 
             string b64 = Convert.ToBase64String(bytes, 0, bytes.Length);
 
-            return trimTrailingEquals ? b64.Replace("=", "") : b64;
+            return removeTrailingEquals ? b64.Replace("=", "") : b64;
         }
 
         public byte[] DeserializeFromBase64(string serializedBase64)
