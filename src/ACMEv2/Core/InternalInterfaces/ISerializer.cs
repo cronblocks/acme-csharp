@@ -4,5 +4,7 @@
     {
         string SerializeToJson<T>(T obj);
         T DeserializeFromJson<T>(string json);
+
+        string SerializeToBase64(byte[] bytes);
     }
 }
