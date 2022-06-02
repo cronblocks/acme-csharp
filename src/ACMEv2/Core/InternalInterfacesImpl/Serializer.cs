@@ -1,5 +1,6 @@
 ﻿using CronBlocks.ACMEv2.Core.InternalInterfaces;
 using System;
+using System.Text;
 using System.Text.Json;
 
 namespace CronBlocks.ACMEv2.Core.InternalInterfacesImpl
@@ -24,6 +25,18 @@ namespace CronBlocks.ACMEv2.Core.InternalInterfacesImpl
             }
 
             return JsonSerializer.Deserialize<T>(json);
+        }
+
+        public string SerializeToBase64(string data, bool removeTrailingEquals = true)
+        {
+            if (string.IsNullOrEmpty(data))
+            {
+                return "";
+            }
+
+            byte[] bytes = Encoding.UTF8.GetBytes(data);
+
+            return SerializeToBase64(bytes, removeTrailingEquals);
         }
 
         public string SerializeToBase64(byte[] bytes, bool removeTrailingEquals = true)
