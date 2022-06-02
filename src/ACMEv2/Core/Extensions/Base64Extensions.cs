@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text;
 
-namespace CronBlocks.ACMEv2.Core.Helpers
+namespace CronBlocks.ACMEv2.Core.Extensions
 {
-    internal static class Base64Helpers
+    internal static class Base64Extensions
     {
         public static string ConvertToBase64(this string data, bool removeTrailingEquals = true)
         {
