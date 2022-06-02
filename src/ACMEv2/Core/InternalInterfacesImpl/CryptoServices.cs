@@ -6,7 +6,7 @@ using System.Text;
 
 namespace CronBlocks.ACMEv2.Core.InternalInterfacesImpl
 {
-    internal class Crypto : ICrypto
+    internal class CryptoServices : ICryptoServices
     {
     }
 }

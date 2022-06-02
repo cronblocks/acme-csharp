@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CronBlocks.ACMEv2.Core.InternalInterfaces
 {
-    internal interface ICrypto
+    internal interface ICryptoServices
     {
     }
 }
