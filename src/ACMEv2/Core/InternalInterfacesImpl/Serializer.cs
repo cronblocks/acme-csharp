@@ -36,7 +36,7 @@ namespace CronBlocks.ACMEv2.Core.InternalInterfacesImpl
             return SerializeToBase64(bytes, 0, bytes.Length, removeTrailingEquals);
         }
 
-        string SerializeToBase64(byte[] bytes, int start, int total, bool removeTrailingEquals = true)
+        public string SerializeToBase64(byte[] bytes, int start, int total, bool removeTrailingEquals = true)
         {
             if (bytes == null)
             {
