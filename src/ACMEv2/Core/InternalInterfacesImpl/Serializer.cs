@@ -33,7 +33,7 @@ namespace CronBlocks.ACMEv2.Core.InternalInterfacesImpl
                 return "";
             }
 
-            string b64 = Convert.ToBase64String(bytes, 0, bytes.Length);
+            string b64 = Convert.ToBase64String(bytes, 0, bytes.Length, Base64FormattingOptions.None);
 
             return removeTrailingEquals ? b64.Replace("=", "") : b64;
         }
