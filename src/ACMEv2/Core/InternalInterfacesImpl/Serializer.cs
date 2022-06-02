@@ -26,7 +26,7 @@ namespace CronBlocks.ACMEv2.Core.InternalInterfacesImpl
             return JsonSerializer.Deserialize<T>(json);
         }
 
-        public string SerializeToBase64(byte[] bytes, bool removeTrailingEquals = false)
+        public string SerializeToBase64(byte[] bytes, bool removeTrailingEquals = true)
         {
             if (bytes == null)
             {
