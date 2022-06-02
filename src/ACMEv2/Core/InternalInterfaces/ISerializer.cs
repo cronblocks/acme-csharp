@@ -6,5 +6,6 @@
         T DeserializeFromJson<T>(string json);
 
         string SerializeToBase64(byte[] bytes);
+        byte[] DeserializeFromBase64(string serializedBase64);
     }
 }
