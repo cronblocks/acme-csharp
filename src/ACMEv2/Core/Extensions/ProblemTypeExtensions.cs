@@ -13,8 +13,8 @@ namespace CronBlocks.ACMEv2.Core.Extensions
             {
                 case ProblemType.Unknown: break;
 
-                case ProblemType.AccountDoesnotExist:     return "";
-                case ProblemType.AlreadyRevoked:          return "";
+                case ProblemType.AccountDoesnotExist:     return "The request specified an account that does not exist";
+                case ProblemType.AlreadyRevoked:          return "The request specified a certificate to be revoked that has already been revoked";
                 case ProblemType.BadCSR:                  return "";
                 case ProblemType.BadNonce:                return "";
                 case ProblemType.BadRevocationReason:     return "";
