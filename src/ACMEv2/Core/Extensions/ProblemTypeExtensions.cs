@@ -13,28 +13,28 @@ namespace CronBlocks.ACMEv2.Core.Extensions
             {
                 case ProblemType.Unknown: break;
 
-                case ProblemType.AccountDoesnotExist:     break;
-                case ProblemType.AlreadyRevoked:          break;
-                case ProblemType.BadCSR:                  break;
-                case ProblemType.BadNonce:                break;
-                case ProblemType.BadRevocationReason:     break;
-                case ProblemType.BadSignatureAlgorithm:   break;
-                case ProblemType.Caa:                     break;
-                case ProblemType.Compound:                break;
-                case ProblemType.Connection:              break;
-                case ProblemType.Dns:                     break;
-                case ProblemType.ExternalAccountRequired: break;
-                case ProblemType.IncorrectResponse:       break;
-                case ProblemType.InvalidContact:          break;
-                case ProblemType.Malformed:               break;
-                case ProblemType.RateLimited:             break;
-                case ProblemType.RejectedIdentifier:      break;
-                case ProblemType.ServerInternal:          break;
-                case ProblemType.Tls:                     break;
-                case ProblemType.Unauthorized:            break;
-                case ProblemType.UnsupportedContact:      break;
-                case ProblemType.UnsupportedIdentifier:   break;
-                case ProblemType.UserActionRequired:      break;
+                case ProblemType.AccountDoesnotExist:     return "";
+                case ProblemType.AlreadyRevoked:          return "";
+                case ProblemType.BadCSR:                  return "";
+                case ProblemType.BadNonce:                return "";
+                case ProblemType.BadRevocationReason:     return "";
+                case ProblemType.BadSignatureAlgorithm:   return "";
+                case ProblemType.Caa:                     return "";
+                case ProblemType.Compound:                return "";
+                case ProblemType.Connection:              return "";
+                case ProblemType.Dns:                     return "";
+                case ProblemType.ExternalAccountRequired: return "";
+                case ProblemType.IncorrectResponse:       return "";
+                case ProblemType.InvalidContact:          return "";
+                case ProblemType.Malformed:               return "";
+                case ProblemType.RateLimited:             return "";
+                case ProblemType.RejectedIdentifier:      return "";
+                case ProblemType.ServerInternal:          return "";
+                case ProblemType.Tls:                     return "";
+                case ProblemType.Unauthorized:            return "";
+                case ProblemType.UnsupportedContact:      return "";
+                case ProblemType.UnsupportedIdentifier:   return "";
+                case ProblemType.UserActionRequired:      return "";
             }
 
             return "Unknown";
