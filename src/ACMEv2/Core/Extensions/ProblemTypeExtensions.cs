@@ -7,7 +7,7 @@ namespace CronBlocks.ACMEv2.Core.Extensions
 {
     internal static class ProblemTypeExtensions
     {
-        public static string Description(this ProblemType problemType)
+        public static string GetDescription(this ProblemType problemType)
         {
             switch (problemType)
             {
