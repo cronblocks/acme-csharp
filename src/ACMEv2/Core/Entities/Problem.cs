@@ -11,6 +11,13 @@ namespace CronBlocks.ACMEv2.Core.Entities
         public int? Status { get; set; }
     }
 
+    public class Subproblem
+    {
+        public string Type { get; set; }
+        public string Detail { get; set; }
+        public Identifier Identifier { get; set; }
+    }
+
     public enum ProblemType
     {
         Unknown,
