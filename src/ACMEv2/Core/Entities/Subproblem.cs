@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CronBlocks.ACMEv2.Core.Entities
+﻿namespace CronBlocks.ACMEv2.Core.Entities
 {
     public class Subproblem
     {
