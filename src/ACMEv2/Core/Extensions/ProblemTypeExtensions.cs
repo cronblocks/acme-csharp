@@ -12,7 +12,6 @@ namespace CronBlocks.ACMEv2.Core.Extensions
             switch (problemType)
             {
                 case ProblemType.Unknown: break;
-
                 case ProblemType.AccountDoesNotExist:     return "The request specified an account that does not exist";
                 case ProblemType.AlreadyRevoked:          return "The request specified a certificate to be revoked that has already been revoked";
                 case ProblemType.BadCSR:                  return "The CSR is unacceptable (e.g., due to a short key)";
