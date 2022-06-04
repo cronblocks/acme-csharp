@@ -1,10 +1,13 @@
-﻿namespace CronBlocks.ACMEv2.Core.Entities
+﻿using System.Collections.Generic;
+
+namespace CronBlocks.ACMEv2.Core.Entities
 {
     public class Problem
     {
         public string StandardProblemTypeNamespace { get; set; }
         public string Type { get; set; }
         public string Detail { get; set; }
+        public IEnumerable<Subproblem> Subproblems { get; set; }
         public int? Status { get; set; }
     }
 
