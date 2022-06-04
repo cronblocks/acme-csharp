@@ -1,6 +1,6 @@
 ﻿using CronBlocks.ACMEv2.Interface;
 
-namespace CronBlocks.ACMEv2.Core.InternalInterfacesImpl
+namespace CronBlocks.ACMEv2.Core.Handlers
 {
     internal class ConsoleLogging : IAcmeLogging
     {

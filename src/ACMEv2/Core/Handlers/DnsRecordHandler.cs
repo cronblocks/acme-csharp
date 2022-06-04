@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CronBlocks.ACMEv2.Core.InternalInterfacesImpl
+namespace CronBlocks.ACMEv2.Core.Handlers
 {
-    internal class Accounts : IAccounts
+    internal class DnsRecordHandler : IDnsRecordHandler
     {
     }
 }

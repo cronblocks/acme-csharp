@@ -1,7 +1,7 @@
 ﻿using CronBlocks.ACMEv2.Core.InternalInterfaces;
 using System.Text.Json;
 
-namespace CronBlocks.ACMEv2.Core.InternalInterfacesImpl
+namespace CronBlocks.ACMEv2.Core.Handlers
 {
     internal class Serializer : ISerializer
     {
