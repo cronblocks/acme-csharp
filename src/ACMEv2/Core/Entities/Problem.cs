@@ -3,7 +3,7 @@
     public class Problem
     {
         public string StandardProblemTypeNamespace { get; set; }
-        public ProblemType Type { get; set; }
+        public string Type { get; set; }
         public string Detail { get; set; }
         public int? Status { get; set; }
     }
