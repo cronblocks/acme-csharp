@@ -1,9 +1,8 @@
-﻿using CronBlocks.ACMEv2.Core.InternalInterfaces;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace CronBlocks.ACMEv2.Core.Handlers
 {
-    internal class Serializer : ISerializer
+    internal class Serializer
     {
         public string SerializeToJson<T>(T obj)
         {

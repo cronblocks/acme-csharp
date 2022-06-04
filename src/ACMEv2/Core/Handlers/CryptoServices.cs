@@ -1,12 +1,11 @@
-﻿using CronBlocks.ACMEv2.Core.InternalInterfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 
 namespace CronBlocks.ACMEv2.Core.Handlers
 {
-    internal class CryptoServices : ICryptoServices
+    internal class CryptoServices
     {
     }
 }
