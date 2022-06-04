@@ -41,6 +41,7 @@ namespace CronBlocks.ACMEv2.Core.Extensions
 
             return "Unknown";
         }
+
         public static string GetProblemDescription(this string problemType)
         {
             return ToProblemTypeEnum(problemType).GetProblemDescription();
