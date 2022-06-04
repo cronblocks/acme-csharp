@@ -16,6 +16,7 @@
         AlreadyRevoked,
         BadCSR,
         BadNonce,
+        BadPublicKey,
         BadRevocationReason,
         BadSignatureAlgorithm,
         Caa,
