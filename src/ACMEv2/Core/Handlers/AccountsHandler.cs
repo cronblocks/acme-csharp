@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CronBlocks.ACMEv2.Core.Handlers
 {
-    internal class Accounts
+    internal class AccountsHandler
     {
     }
 }

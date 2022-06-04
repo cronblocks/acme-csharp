@@ -2,7 +2,7 @@
 
 namespace CronBlocks.ACMEv2.Core.Handlers
 {
-    internal class Serializer
+    internal class SerializationHandler
     {
         public string SerializeToJson<T>(T obj)
         {

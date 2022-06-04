@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CronBlocks.ACMEv2.Core.Handlers
 {
-    internal class CryptoServices
+    internal class CryptoServicesHandler
     {
     }
 }
