@@ -10,8 +10,7 @@
 
     public enum ProblemType
     {
-        Unknown = 0,
-
+        Unknown,
         AccountDoesnotExist,
         AlreadyRevoked,
         BadCSR,
@@ -25,8 +24,8 @@
         Dns,
         ExternalAccountRequired,
         IncorrectResponse,
-        InvalidContact = 13,
-        InvalidEmail = 13, // Let's encrypt difference: https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md
+        InvalidContact,
+        InvalidEmail, // Let's encrypt difference: https://github.com/letsencrypt/boulder/blob/master/docs/acme-divergences.md
         Malformed,
         OrderNotReady,
         RateLimited,
