@@ -1,11 +1,10 @@
-﻿using CronBlocks.ACMEv2.Core.InternalInterfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CronBlocks.ACMEv2.Core.TempServer
 {
-    internal class TempServer : IServer
+    internal class TempServer
     {
         public void ServeDataAtEndPoint(string endPoint, string data)
         {
