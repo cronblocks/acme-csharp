@@ -45,6 +45,11 @@ namespace CronBlocks.ACMEv2.Interface
         public bool UseStaging { get; set; } = true;
 
         /// <summary>
+        /// Whether to automatically agree to the Terms of Service - default = true
+        /// </summary>
+        public bool AutomaticallyAgreeToTermsOfService { get; set; } = true;
+
+        /// <summary>
         /// Domain control validation method - default = HTTP Request Validation
         /// </summary>
         public ValidationMethod ValidationMethod { get; set; } = ValidationMethod.HttpQuery;
