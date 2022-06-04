@@ -11,7 +11,7 @@
     public enum ProblemType
     {
         Unknown,
-        AccountDoesnotExist,
+        AccountDoesNotExist,
         AlreadyRevoked,
         BadCSR,
         BadNonce,
