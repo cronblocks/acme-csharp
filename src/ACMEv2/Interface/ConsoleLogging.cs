@@ -1,6 +1,4 @@
-﻿using CronBlocks.ACMEv2.Interface;
-
-namespace CronBlocks.ACMEv2.Core.Handlers
+﻿namespace CronBlocks.ACMEv2.Interface
 {
     internal class ConsoleLogging : IAcmeLogging
     {
@@ -31,7 +29,7 @@ namespace CronBlocks.ACMEv2.Core.Handlers
             {
                 System.Console.ForegroundColor = System.ConsoleColor.Yellow;
                 System.Console.Write($"ACME Warning - ");
-                
+
                 System.Console.ResetColor();
                 System.Console.WriteLine($"{message}");
             }
