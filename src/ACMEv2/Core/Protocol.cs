@@ -6,12 +6,12 @@ using System.Text;
 
 namespace CronBlocks.ACMEv2.Core
 {
-    internal class AcmeProtocol
+    internal class Protocol
     {
         private readonly IAcmeLogging _log;
         private readonly AcmeSettings _settings;
 
-        public AcmeProtocol(AcmeSettings settings)
+        public Protocol(AcmeSettings settings)
         {
             _settings = settings ?? throw new ArgumentNullException(nameof(settings));
 

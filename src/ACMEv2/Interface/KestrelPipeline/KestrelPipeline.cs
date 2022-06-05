@@ -10,7 +10,7 @@ namespace CronBlocks.ACMEv2.Interface.KestrelPipeline
     public static class KestrelPipeline
     {
         private static AcmeSettings _settings;
-        private static AcmeProtocol _protocol;
+        private static Protocol _protocol;
 
         public static void AddACMEv2(this IServiceCollection services, AcmeSettings acmeSettings = null)
         {
@@ -22,7 +22,7 @@ namespace CronBlocks.ACMEv2.Interface.KestrelPipeline
             _settings = acmeSettings ?? new AcmeSettings();
             _settings.ServerType = ServerType.Kestrel;
 
-            _protocol = new AcmeProtocol(_settings);
+            _protocol = new Protocol(_settings);
         }
 
         public static void UseACMEv2(this IApplicationBuilder appBuilder)

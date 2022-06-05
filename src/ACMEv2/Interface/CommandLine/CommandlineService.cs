@@ -8,14 +8,14 @@ namespace CronBlocks.ACMEv2.Interface.CommandLine
     public class CommandlineService
     {
         private AcmeSettings _settings;
-        private static AcmeProtocol _protocol;
+        private static Protocol _protocol;
 
         public CommandlineService(AcmeSettings acmeSettings = null)
         {
             _settings = acmeSettings ?? new AcmeSettings();
             _settings.ServerType = ServerType.TempServer;
 
-            _protocol = new AcmeProtocol(_settings);
+            _protocol = new Protocol(_settings);
         }
 
         /// <summary>

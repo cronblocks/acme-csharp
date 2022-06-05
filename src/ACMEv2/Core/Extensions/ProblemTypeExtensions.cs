@@ -51,7 +51,7 @@ namespace CronBlocks.ACMEv2.Core.Extensions
                 return ProblemType.Unknown;
             }
 
-            problemType = problemType.Trim().Replace(AcmeConstants.ProblemTypeNamespace, "");
+            problemType = problemType.Trim().Replace(Constants.ProblemTypeNamespace, "");
 
             switch (problemType)
             {
