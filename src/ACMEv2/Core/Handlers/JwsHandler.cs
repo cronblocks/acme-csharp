@@ -14,14 +14,14 @@ namespace CronBlocks.ACMEv2.Core.Handlers
     ///     o The JWS Unprotected Header [RFC7515] MUST NOT be used
     ///     o The JWS Payload MUST NOT be detached
     ///     o The JWS Protected Header MUST include the following fields:
-    ///         *  "alg" (Algorithm)
-    ///             +  This field MUST NOT contain "none" or a Message Authentication
-    ///                Code (MAC) algorithm (e.g.one in which the algorithm registry
-    ///                description mentions MAC/HMAC)
-    ///         *  "nonce" (defined in Section 6.5)
-    ///         *  "url" (defined in Section 6.4)
-    ///         *  Either "jwk" (JSON Web Key) or "kid" (Key ID) as specified -
-    ///            fields are mutually exclusive
+    ///         * "alg" (Algorithm)
+    ///           + This field MUST NOT contain "none" or a Message Authentication
+    ///             Code (MAC) algorithm (e.g.one in which the algorithm registry
+    ///             description mentions MAC/HMAC)
+    ///         * "nonce" (defined in Section 6.5)
+    ///         * "url" (defined in Section 6.4)
+    ///         * Either "jwk" (JSON Web Key) or "kid" (Key ID) as specified -
+    ///           fields are mutually exclusive
     ///     o An ACME server MUST implement the "ES256" signature algorithm [RFC7518]
     ///       and SHOULD implement the "EdDSA" signature algorithm using the "Ed25519"
     ///       variant (indicated by "crv") [RFC8037]
