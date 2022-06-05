@@ -5,7 +5,7 @@
         Info, Warning, Error
     }
 
-    public interface IAcmeLogging
+    public interface ILogging
     {
         void SetLoggingLevel(LoggingLevel level);
         void LogInfo(string message);
