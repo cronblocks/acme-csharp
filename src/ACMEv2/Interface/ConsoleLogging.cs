@@ -1,6 +1,6 @@
 ﻿namespace CronBlocks.ACMEv2.Interface
 {
-    internal class ConsoleLogging : IAcmeLogging
+    internal class ConsoleLogging : ILogging
     {
         private bool logInfo = false;
         private bool logWarning = false;

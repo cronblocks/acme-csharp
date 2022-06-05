@@ -8,7 +8,7 @@ namespace CronBlocks.ACMEv2.Core
 {
     internal class Protocol
     {
-        private readonly IAcmeLogging _log;
+        private readonly ILogging _log;
         private readonly AcmeSettings _settings;
 
         public Protocol(AcmeSettings settings)

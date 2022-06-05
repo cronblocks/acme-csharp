@@ -1,5 +1,4 @@
-﻿using CronBlocks.ACMEv2.Core.Services;
-using System;
+﻿using System;
 using System.IO;
 
 namespace CronBlocks.ACMEv2.Interface
@@ -27,7 +26,7 @@ namespace CronBlocks.ACMEv2.Interface
         /// <summary>
         /// Logging ACME messages - default = ConsoleLogging
         /// </summary>
-        public IAcmeLogging Logging { get; set; } = new ConsoleLogging(LoggingLevel.Info);
+        public ILogging Logging { get; set; } = new ConsoleLogging(LoggingLevel.Info);
 
         /// <summary>
         /// Location for keeping local ACME data - default = {current-directory}/.acme-data
