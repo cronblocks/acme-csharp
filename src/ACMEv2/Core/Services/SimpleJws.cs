@@ -3,7 +3,7 @@
 namespace CronBlocks.ACMEv2.Core.Services
 {
     /// <summary>
-    /// ACME Specific implementation is emphasized:
+    /// ACME Specific implementation for JWS:
     /// 
     /// A JWS object sent as the body of an ACME request MUST meet the following additional
     /// criteria:
