@@ -1,4 +1,5 @@
-﻿using CronBlocks.ACMEv2.Core.Extensions;
+﻿using CronBlocks.ACMEv2.Core.Entities;
+using CronBlocks.ACMEv2.Core.Extensions;
 
 namespace CronBlocks.ACMEv2.Core.Services
 {
@@ -49,7 +50,7 @@ namespace CronBlocks.ACMEv2.Core.Services
             throw new System.NotImplementedException();
         }
 
-        public string EncodeUsingAccountURL()
+        public string EncodeUsingAccount(Account account)
         {
             throw new System.NotImplementedException();
         }
