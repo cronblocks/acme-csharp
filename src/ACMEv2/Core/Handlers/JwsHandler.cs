@@ -23,15 +23,15 @@ namespace CronBlocks.ACMEv2.Core.Handlers
     ///              
     ///        *  "nonce" (defined in Section 6.5)
     ///        *  "url" (defined in Section 6.4)
-    ///        *  "jwk" (JSON Web Key) or "kid" (Key ID) - mutually exclusive.
+    ///        *  "jwk" or "kid" - mutually exclusive.
     ///           
-    ///           +  "jwk"
+    ///           +  "jwk" (JSON Web Key)
     ///           
     ///              -  For newAccount requests, and for revokeCert requests authenticated by
     ///                 a certificate key, there MUST be a "jwk" field. This field MUST contain the
     ///                 public key corresponding to the private key used to sign the JWS.
     ///                 
-    ///           +  "kid"
+    ///           +  "kid" (Key ID)
     ///           
     ///              -  For all other requests, the request is signed using an existing account,
     ///                 and there MUST be a "kid" field. This field MUST contain the account URL
