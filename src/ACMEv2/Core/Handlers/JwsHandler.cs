@@ -1,6 +1,4 @@
-﻿using System.Text.Json;
-
-namespace CronBlocks.ACMEv2.Core.Handlers
+﻿namespace CronBlocks.ACMEv2.Core.Handlers
 {
     /// <summary>
     /// ACME Specific implementation is emphasized:
@@ -44,6 +42,6 @@ namespace CronBlocks.ACMEv2.Core.Handlers
     /// </summary>
     internal class JwsHandler
     {
-        
+
     }
 }
