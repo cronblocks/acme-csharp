@@ -22,6 +22,9 @@ namespace CronBlocks.ACMEv2.Core.Handlers
     ///         * "url" (defined in Section 6.4)
     ///         * Either "jwk" (JSON Web Key) or "kid" (Key ID) as specified -
     ///           fields are mutually exclusive
+    ///           + For newAccount requests, and for revokeCert requests authenticated by
+    ///             a certificate key, there MUST be a "jwk" field. This field MUST contain
+    ///             the public key corresponding to the private key used to sign the JWS
     ///     o An ACME server MUST implement the "ES256" signature algorithm [RFC7518]
     ///       and SHOULD implement the "EdDSA" signature algorithm using the "Ed25519"
     ///       variant (indicated by "crv") [RFC8037]
