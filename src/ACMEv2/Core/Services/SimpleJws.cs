@@ -44,6 +44,14 @@ namespace CronBlocks.ACMEv2.Core.Services
     /// </summary>
     internal class SimpleJws
     {
+        public string EncodeUsingPublicKey()
+        {
+            throw new System.NotImplementedException();
+        }
 
+        public string EncodeUsingAccountURL()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
