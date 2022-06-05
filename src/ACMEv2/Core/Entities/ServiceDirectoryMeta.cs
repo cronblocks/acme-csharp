@@ -1,6 +1,6 @@
 ﻿namespace CronBlocks.ACMEv2.Core.Entities
 {
-    public class ServiceDirectoryMeta
+    internal class ServiceDirectoryMeta
     {
         public string TermsOfService { get; set; }
         public string Website { get; set; }

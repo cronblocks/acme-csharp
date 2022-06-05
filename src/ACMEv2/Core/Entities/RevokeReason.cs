@@ -1,6 +1,6 @@
 ﻿namespace CronBlocks.ACMEv2.Core.Entities
 {
-    public enum RevokeReason
+    internal enum RevokeReason
     {
         Unspecified = 0,
         KeyCompromise,

@@ -2,7 +2,7 @@
 
 namespace CronBlocks.ACMEv2.Core.Entities
 {
-    public class ServiceDirectory
+    internal class ServiceDirectory
     {
         public Dictionary<string, object> extra { get; set; } = new Dictionary<string, object>();
         public string Directory { get; set; }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CronBlocks.ACMEv2.Core.Entities
 {
-    public class Order
+    internal class Order
     {
         public string OrderUrl { get; set; }
         public string Status { get; set; }

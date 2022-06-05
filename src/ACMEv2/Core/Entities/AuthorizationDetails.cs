@@ -1,6 +1,6 @@
 ﻿namespace CronBlocks.ACMEv2.Core.Entities
 {
-    public class AuthorizationDetails
+    internal class AuthorizationDetails
     {
         public Identifier Identifier { get; set; }
         public string Status { get; set; }

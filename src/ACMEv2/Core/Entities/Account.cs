@@ -2,7 +2,7 @@
 
 namespace CronBlocks.ACMEv2.Core.Entities
 {
-    public class Account
+    internal class Account
     {
         public string Id { get; set; }
         public object Key { get; set; }

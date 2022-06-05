@@ -2,7 +2,7 @@
 
 namespace CronBlocks.ACMEv2.Core.Entities
 {
-    public class Problem
+    internal class Problem
     {
         public string StandardProblemTypeNamespace { get; set; }
         public string Type { get; set; }
@@ -11,14 +11,14 @@ namespace CronBlocks.ACMEv2.Core.Entities
         public int? Status { get; set; }
     }
 
-    public class Subproblem
+    internal class Subproblem
     {
         public string Type { get; set; }
         public string Detail { get; set; }
         public Identifier Identifier { get; set; }
     }
 
-    public enum ProblemType
+    internal enum ProblemType
     {
         Unknown,
         AccountDoesNotExist,

@@ -1,6 +1,6 @@
 ﻿namespace CronBlocks.ACMEv2.Core.Entities
 {
-    public class Challenge
+    internal class Challenge
     {
         public string Type { get; set; }
         public string Url { get; set; }
