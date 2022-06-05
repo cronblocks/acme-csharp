@@ -42,7 +42,7 @@ namespace CronBlocks.ACMEv2.Core.Services
     ///        "crv") [RFC8037]
     ///     o  Content-Type header field set to "application/jose+json"
     /// </summary>
-    internal class JwsHandler
+    internal class SimpleJws
     {
 
     }
