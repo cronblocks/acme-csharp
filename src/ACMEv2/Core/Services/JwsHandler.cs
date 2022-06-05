@@ -1,6 +1,6 @@
 ﻿using CronBlocks.ACMEv2.Core.Extensions;
 
-namespace CronBlocks.ACMEv2.Core.Handlers
+namespace CronBlocks.ACMEv2.Core.Services
 {
     /// <summary>
     /// ACME Specific implementation is emphasized:
