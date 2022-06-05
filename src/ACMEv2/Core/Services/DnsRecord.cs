@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CronBlocks.ACMEv2.Core.Services
 {
-    internal class DnsRecordHandler
+    internal class DnsRecord
     {
     }
 }
