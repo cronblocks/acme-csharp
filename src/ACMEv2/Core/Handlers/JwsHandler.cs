@@ -1,4 +1,6 @@
-﻿namespace CronBlocks.ACMEv2.Core.Handlers
+﻿using CronBlocks.ACMEv2.Core.Extensions;
+
+namespace CronBlocks.ACMEv2.Core.Handlers
 {
     /// <summary>
     /// ACME Specific implementation is emphasized:
