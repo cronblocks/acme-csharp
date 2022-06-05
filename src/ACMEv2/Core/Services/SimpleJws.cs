@@ -1,5 +1,6 @@
 ﻿using CronBlocks.ACMEv2.Core.Entities;
 using CronBlocks.ACMEv2.Core.Extensions;
+using CronBlocks.ACMEv2.Interface;
 
 namespace CronBlocks.ACMEv2.Core.Services
 {
@@ -45,6 +46,13 @@ namespace CronBlocks.ACMEv2.Core.Services
     /// </summary>
     internal class SimpleJws
     {
+        private readonly ILogging _log;
+
+        public SimpleJws(ILogging logging)
+        {
+            _log = logging;
+        }
+
         public string EncodeUsingPublicKey()
         {
             throw new System.NotImplementedException();
