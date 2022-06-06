@@ -14,6 +14,7 @@ namespace CronBlocks.ACMEv2.Core.Services
         public ApiClient(ILogging logging)
         {
             _log = logging;
+            _http = new HttpClient();
         }
     }
 }
